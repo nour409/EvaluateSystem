@@ -1,0 +1,671 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    min-height: 100vh;
+    width:100%;
+    font-size: 20px;
+
+
+}
+input
+{
+    height: 55px;
+    border-radius: 5px;
+}
+.container-fluid
+{
+    padding: 37px;
+}
+.special-link
+{
+    text-decoration:none;
+    color: black;
+}
+.special-link:hover
+{
+    color: black;
+}
+/*##################################################side bar################################################*/
+.sidebar
+{
+    height: 100%;
+    width: 70px;
+    background: #6f56c7;
+    position: fixed;
+    border-radius:  0 50px 50px 0;
+    transition: all 0.5s ease-in-out;
+}
+.active-aside
+{
+    width: 240px;
+}
+.head-sidebar
+{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.head-sidebar .profile
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+
+
+
+}
+.head-sidebar .profile img
+{
+    width:40px;
+    height: 40px;
+    border-radius: 50% 50%;
+    margin-right: 20px;
+    margin-left: 33px;
+ opacity: 0;
+}
+.sidebar.active-aside .profile img
+{
+opacity: 1;
+}
+
+.head-sidebar .profile_name
+{
+    color:#ffffff;
+    font-weight: bolder;
+    font-size: 22px;
+   opacity: 0;
+
+}
+.sidebar.active-aside .profile_name
+{
+    opacity: 1;
+    pointer-events: none;
+}
+
+.head-sidebar .menu{
+    position: absolute;
+    top: 16px;
+
+    color: #ffffff;
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+
+background-color: transparent;
+    border: none;
+
+    border-radius:10px 10px  ;
+
+
+}
+.head-sidebar .menu:hover
+{
+    background-color: #ffffff;
+    color: #6f42c1;
+    transform: scale(1.1);
+}
+
+.sidebar.active-aside .head-sidebar .menu
+{
+    left: 87%;
+    transform:scale(1.1);
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+
+
+
+
+}
+.sidebar.active-aside .head-sidebar .menu:hover
+{
+    background-color: #6f42c1;
+    color: #ffffff;
+}
+.sidebar ul li{
+    list-style: none;
+   width: 100%;
+
+
+
+}
+.nav_list
+{
+    padding-left: 10px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    transition: all 0.4s ease-in-out;
+    border-radius:44px 0 0 44px;
+    height: 65px;
+    width: 100%;
+    margin-right: 0;
+    font-size: 20px;
+
+
+}
+
+.sidebar.active-aside .link_name
+{
+    opacity: 1;
+}
+.sidebar .link_name
+{
+    opacity: 0;
+}
+
+.sidebar ul li a:hover
+{
+    color: #6f56c7;
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
+.sidebar ul li .active
+{
+    color: #6f56c7;
+    background-color: #ffffff;
+}
+.sidebar ul li a .nav_icon
+{
+    height: 25px;
+    width: 25px;
+text-align: center;
+    margin-left: 20px;
+
+}
+
+.sidebar.active-aside ul li .nav_icon
+{
+    margin-right: 25px;
+    margin-left: 12px;
+    height: 22px;
+    width: 22px;
+    text-align: center;
+
+}
+.content
+ {
+     height: 100%;
+     position: absolute;
+
+     width: calc(100% - 78px);
+     left: 78px;
+     transition:all .5s ease-in-out ;
+ }
+
+
+
+.sidebar.active-aside ~ .content
+{
+    width: calc(100% - 240px);
+    left: 240px;
+}
+
+/*-------------------------------------------------------------*/
+.dashboard_card
+{
+
+    font-size: 15px;
+    margin-bottom: 34px;
+    width: 90% !important;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.dashboard_card:hover
+{
+    transform: scale(1.1);
+}
+
+.dashboard_card img
+{
+    border-radius: 20px  20px 0 0  ;
+    height: 175px;
+}
+.dashboard_card .card-body
+{
+    margin-left: 10px;
+}
+.profile_dashboard
+{
+    display: flex;
+    align-items: center;
+}
+.profile_dashboard img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-right: 30px;
+}
+.btn_todo
+{
+    margin-top: 100px;
+}
+.todo a{
+    width: 100%;
+    margin: 10px 0;
+    color: #ffffff;
+    height: 55px;
+    line-height: 42px;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: 0.5s ease;
+
+}
+.todo a:hover
+{
+    transform: scale(1.1);
+}
+
+/*-------------------------------------------------------------*/
+.student_grade_name
+{
+    margin-top: 92px;
+    margin-bottom: 80px;
+}
+.font-weight-bold
+{
+    font-weight: bolder;
+
+}
+.student_grade_table{
+    padding-left: 30px;
+    width: 90%;
+
+}
+/*###################################### add quiz and question ########################################3*/
+.head_page
+{
+    margin-left: 20px;
+    border-bottom: 2px solid #dddddd ;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+
+}
+.head_page svg{
+    margin-right: 10px;
+
+
+}
+
+.head_page h3
+{
+    font-weight: 630;
+}
+.add_quiz
+ {
+    padding-top:30px;
+    padding-bottom:30px;
+
+ }
+.add_quiz input
+{
+    width: 91%;
+}
+
+.quiz_name
+{
+    width: 100%;
+}
+
+ .choices
+{
+    padding: 10px;
+}
+ .choices input
+{
+    width: 100%;
+}
+.addQuizAndQuestions header
+{
+    width: 90%;
+    border-bottom: 1px solid ;
+}
+.addQuizAndQuestions section
+ {
+   padding-top: 20px;
+    padding-bottom: 0px;
+ }
+.question input
+{
+    width: 100%;
+}
+.add_question .dropdown
+{
+    margin-top: 30px;
+}
+.add_question .dropdown button
+{
+    height: 55px;
+}
+.add_question .dropdown li input
+{
+    height: 30px;
+    font-size: 20px;
+}
+.add_question .answer select
+{
+    height: 55px;
+    width: 80%;
+}
+
+/*####################################################################################################33*/
+.second_sidebar {
+    margin-left: 3px;
+    padding: 0;
+    width: 110px;
+
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    padding-top: 100px;
+}
+
+/* Sidebar links */
+.second_sidebar a {
+    display: block;
+    color: #0c0b0b;
+    padding: 7px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.second_sidebar a.active {
+
+    border-left: 3px solid #6f6e6e;
+}
+
+/* Links on mouse-over */
+.second_sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content2 {
+    margin-left: 110px;
+    padding: 1px 16px;
+
+}
+/*###################################################subject Show ################################################33*/
+.subject_img
+{
+    width: 100%;
+    height: 400px;
+}
+.subject
+{
+    padding-left: 0;
+}
+.content_subject{
+    margin-top: 30px;
+}
+.subject .description h3,
+.subject .announcement h3
+{
+    font-size: 30px;
+    font-weight:500;
+    margin-bottom:20px;
+    border-bottom:3px solid #dddddd;
+    padding-bottom: 7px;
+    width: 80%;
+    display: flex ;
+    justify-content: space-between;
+}
+
+.edit_icon
+{
+    text-decoration: none;
+    color: #3767c5;
+    font-size: 20px;
+}
+.subject .description p,
+.subject .announcement p
+{
+    padding-left:30px;
+    padding-right:20px;
+    color: blue;
+}
+.head_subject
+{
+    position: relative;
+}
+.head_subject form
+{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+     color: #ffffff;
+    font-size: 40px;
+
+}
+.head_subject form svg
+{
+    cursor: pointer;
+}
+.head_subject form svg:hover
+{
+    color: #5050c5;
+}
+.head_subject input
+{
+    display:none;
+}
+.buttons
+{
+    margin-bottom: 20px;
+}
+.buttons a
+{
+  text-decoration: none;
+    cursor: pointer;
+}
+.buttons .add{
+    margin-left: 40px;
+
+}
+
+.buttons .delete{
+    cursor: pointer;
+}
+/*########################################################################*/
+.search_input
+{
+    width: 300px;
+}
+#search-addon
+{
+    cursor: pointer;
+}
+
+/*##############################################################################3*/
+.profile
+{
+margin-top: 100px;
+}
+#image_profile
+{
+    width:200px;
+    height: 200px;
+    border-radius:110px ;
+
+}
+.img_profile_container
+{
+    width:170px;
+    height: 170px;
+    display: flex;
+
+    margin-top: -30px;
+
+}
+.content_profile
+{
+    padding-top: 25px;
+    padding-left: 50px;
+    margin-right: 80px;
+    margin-left: 30px;
+
+}
+.content_profile h1
+{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.edit_password form{
+    border: 2px solid black;
+    padding:60px;
+    border-radius: 90px;
+    margin-top: -80px;
+}
+.edit_password form h3 {
+    margin-bottom: 20px;
+}
+.edit_password form input{
+    margin-bottom: 30px;
+    width: 90%;
+}
+.edit_password form button
+{
+    width: 90%;
+}
+
+.img_profile_container
+{
+    position: relative;
+}
+.img_profile_container form
+{
+    position: absolute;
+    right: -4px;
+    bottom: -7px;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+
+.img_profile_container form svg
+{
+    cursor: pointer;
+}
+.img_profile_container form svg:hover
+{
+    color: #5050c5;
+}
+.img_profile_container input
+{
+    display:none;
+}
+.card_student
+{
+    border: 2px solid black;
+    border-radius: 30px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+
+}
+.card_student:hover
+{
+    color: black;
+}
+
+.card_student img
+{
+    width:150px;
+    height: 150px;
+    border-radius: 30px 0 0 30px ;
+
+}
+/*############################show student############################*/
+.head_student
+{
+    margin-bottom: 30px;
+}
+.head_student img
+{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+}
+.head_student .data
+{
+    padding-top: 90px;
+}
+.head_student .data h2
+{
+    margin-bottom: 15px;
+}
+/*################################create doctor ################3*/
+.add_doctor h4
+{
+    margin-bottom: 30px;
+}
+
+
+.add_doctor
+{
+    width: 80%;
+    margin: auto;
+}
+
+
+.add_doctor input
+{
+    margin-bottom: 30px;
+
+}
+
+/*############################################333*/
+.add_question_button
+{
+    margin-top: 40px;
+}
+.add_question_button svg
+{
+    margin-right: 40px;
+
+    width: 40px;
+    height: 40px;
+}
+.add_question_button h4
+{
+    margin-right: 30px;
+}
+.quiz_courses
+{
+    border-radius: 20px;
+    height: 120px;
+    background-color: #6f56c7 ;
+    color: #ffffff;
+    margin-bottom: 30px;
+    cursor:  pointer;
+}
+.quiz_courses .shield
+{
+
+    width: 40px;
+    height: 40px;
+
+
+}

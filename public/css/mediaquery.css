@@ -1,0 +1,82 @@
+@media (max-width: 600px) {
+
+    div.dashboard_card {
+        width: 100% !important;
+
+    }
+
+
+}
+
+@media (max-width:1415px) {
+    .edit_password form {
+        margin-top: 20px;
+    }
+
+    .content_profile {
+        margin-top: -25px;
+        margin-bottom: 90px;
+    }
+}
+@media (max-width:943px) {
+    .img_profile_container
+    {
+        width: 80%;
+    }
+    .img_profile_container img
+    {
+        width:50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 960px) {
+    .edit_password form {
+        margin-top: 20px;
+    }
+
+    .content_profile {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 301px) {
+    .body {
+        font-size: 10px !important;
+    }
+
+    .container {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .edit_password form {
+        margin-top: 20px;
+    }
+
+    .content_profile {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+/*@media screen and (max-width: 700px) {*/
+/*    .sidebar {*/
+/*        width: 100%;*/
+/*        height: auto;*/
+/*        position: relative;*/
+/*    }*/
+/*    .sidebar a {float: left;}*/
+/*    div.content {margin-left: 0;}*/
+/*}*/
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
