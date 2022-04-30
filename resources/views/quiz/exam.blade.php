@@ -13,9 +13,16 @@
     <title>Document</title>
 </head>
 <body>
-
-
-<section class="exam">
+<div id="x">
+  
+</div>
+<div>
+    <button onclick="togg()" id="but">full screen to start the exam</button>
+</div>
+@php
+   echo  $_COOKIE["fullscreen"];
+@endphp
+<section class="exam" style="visibility: hidden; " id ="qu">
     <div class="container">
         <h2 class="text-center p-5">{{$quiz->name}}</h2>
 
@@ -55,6 +62,8 @@
 <script src="{{URL::asset('js/all.min.js')}}"></script>
 <script src="{{URL::asset('js/script.js')}}"></script>
 <script src="{{URL::asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{URL::asset('js/full.js')}}"></script>
+
 
 </body>
 </html>

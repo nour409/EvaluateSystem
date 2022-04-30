@@ -7,7 +7,7 @@
                 <a href="{{route('quiz.grades',$item)}}">
                 @else
 
-                <a href="{{route('quiz.view',$item->id)}}">
+                <a href="{{route('quiz.view',$item->id)}}"onclick="toggleFullScreen();">  
              @endif
 
 
